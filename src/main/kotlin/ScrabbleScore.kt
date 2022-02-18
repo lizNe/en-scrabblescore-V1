@@ -19,6 +19,7 @@ class ScrabbleScore {
             in "K" -> 5
             in "JX" -> 8
             in "QZ" -> 10
+            in "-1" -> 0
             else -> error("Unknown character")
         }
 
@@ -30,4 +31,5 @@ class ScrabbleScore {
            K                                  5
            J, X                               8
            Q, Z                               10"""
+
 }
