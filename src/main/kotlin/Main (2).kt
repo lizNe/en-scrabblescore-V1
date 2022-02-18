@@ -11,12 +11,12 @@ private val scrabbleScore = ScrabbleScore();
 //    - the user should be continually asked to enter a word until they type a sentinel value (e.g. -1) to end the program
 
 fun main(args: Array<String>) {
-    scrabbleScore.letterValues()
+    println(scrabbleScore.letterValues())
     while (true) {
-        print("Enter a word and compute the Scrabble Score: ")
+        println("Enter a word and compute the Scrabble Score: ")
         val word = input.nextLine()
         //TODO change to use a string template:
-        println(word + "has a value of" + scrabbleScore.scoreWord(word))
+        println(word + " has a value of " + scrabbleScore.scoreWord(word))
     }
 }
 
