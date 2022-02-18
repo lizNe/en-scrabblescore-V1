@@ -1,8 +1,7 @@
 import java.util.*
-import kotlin.system.exitProcess
 
-private val input = Scanner(System.`in`);
-private val scrabbleScore = ScrabbleScore();
+private val input = Scanner(System.`in`)
+private val scrabbleScore = ScrabbleScore()
 
 //TODO This program has bugs and incomplete code in it...you will need to fix them so you have the following functionality:
 // The main method should:
