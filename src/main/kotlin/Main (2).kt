@@ -10,10 +10,15 @@ private val scrabbleScore = ScrabbleScore()
 //    - display the Scrabble Score for the word (the case of the letters shouldn't matter i.e. u is the same as U)
 //    - the user should be continually asked to enter a word until they type a sentinel value (e.g. -1) to end the program
 
+//Break ends and breaks the while loop
+//$word displays the word entered by the user. scrabbleScore is called to execute the class ScrabbleScore and within that class use the function scoreLetter.
+// The parameter word passed into .scoreWord(word)
+// Used if statement to end the program
+
 fun main() {
     println(scrabbleScore.letterValues())
     while (true) {
-        println("Enter a word and compute the Scrabble Score: ")
+        print("Enter a word and compute the Scrabble Score: ")
         val word = input.nextLine()
         println("$word has a value of ${scrabbleScore.scoreWord(word)}")
         if (word=="-1") {
