@@ -1,5 +1,8 @@
 class ScrabbleScore {
 
+// score was 0 and is now = to scoreLetter which contains the values of the letters.
+//  + is added to go through each char of the word and then the total score of the word is calculated and in the variable score
+
     fun scoreWord(word: String): Int {
         var score = 0
         for (char in word)
@@ -8,9 +11,11 @@ class ScrabbleScore {
         return score
     }
 
-    //TODO the program if the user enters in any chars other than capital letters...try fix this.
     //Reference: https://exercism.org/tracks/kotlin/exercises/scrabble-score/solutions?page=1
-    private fun scoreLetter(char: Char): Int =    /* same as curly bracket and return*/
+    // = is same as curly bracket and return
+    // The characters entered as lowercase will be converted to uppercase to avoid case sensitivity
+
+    private fun scoreLetter(char: Char): Int =
         when (char.uppercaseChar()) {
             in "AEIOULNRST" -> 1
             in "DG" -> 2
